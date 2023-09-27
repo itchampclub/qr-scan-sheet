@@ -1,6 +1,5 @@
 # qr-scan-sheet
 
-![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode01&chs=180x180&choe=UTF-8)![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode02&chs=180x180&choe=UTF-8)![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode03&chs=180x180&choe=UTF-8)
 
 ไฟล์ index.html
 
@@ -13,3 +12,17 @@
         var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/xxxxxxxxxxxxxxx/edit#gid=586389379");
         var sheet = ss.getSheetByName("data");
         * แทนที่ด้วย sheet url, sheet name ของท่านเอง
+
+![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode01&chs=180x180&choe=UTF-8)
+
+
+
+![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode02&chs=180x180&choe=UTF-8)
+
+
+
+![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode03&chs=180x180&choe=UTF-8)
+
+
+
+![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode04&chs=180x180&choe=UTF-8)
