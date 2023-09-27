@@ -1,5 +1,7 @@
 # qr-scan-sheet
 
+![Logo]([https://i.ibb.co/3BHdkPT/Capture.png](https://chart.googleapis.com/chart?cht=qr&chl=testcode01&chs=180x180&choe=UTF-8)) ![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode02&chs=180x180&choe=UTF-8) ![Logo]([https://i.ibb.co/3BHdkPT/Capture.png](https://chart.googleapis.com/chart?cht=qr&chl=testcode03&chs=180x180&choe=UTF-8))
+
 ไฟล์ index.html
 
         ค้นหา https://script.google.com/macros/s/AKfycbw5Im-kroA_uFs1ssUdPkVEKQ_GtE6Ircl2Fgt90MEFCyVNB1mbq1X5ki2KF517shct/exec
