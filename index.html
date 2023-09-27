@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,400;1,200;1,400&display=swap" rel="stylesheet">
+<style>
+h1, h3, h5, th, tr, td, p, .btn, .progress-bar, .d-flex, .form-group, .modal{
+  font-family: 'Sarabun', sans-serif;
+}
+select{
+        color:red;
+    }
+    option:not(first-child) {
+        color:red;
+    }
+    </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integ>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" integ>
+<title>Barcode Scan</title>
+</head>
+<body>
+  <input type="text" id="cdid" hidden>
+  <div id="reader" width="400px" height="400px"></div>
+  <div class="w-100 d-flex justify-content-center align-items-center" style="height: 500px;">
+      <button type="button" class="btn btn-primary" id="btnScanCode" onclick="scan()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+<path d="M2 2h2v2H2V2Z"></path>
+<path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"></path>
+<path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"></path>
+<path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"></path>
+<path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"></path>
+</svg>   Start/Stop Scan</button>
+  <div class="text-center" role="status"  id="btloading" disabled hidden>
+    <span class="spinner-grow text-success" role="status" aria-hidden="true"></span>
+    <span class="">กำลังบันทึก...</span>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.0.3/html5-qrcode.min.js"></script>
+<script>
+var _0x50a4a5=_0x2ee9;(function(_0x229b9c,_0x1462e1){var _0x41bdda=_0x2ee9,_0x5b4666=_0x229b9c();while(!![]){try{var _0x422099=-parseInt(_0x41bdda(0x157))/0x1+-parseInt(_0x41bdda(0x142))/0x2*(parseInt(_0x41bdda(0x14a))/0x3)+parseInt(_0x41bdda(0x14e))/0x4+-parseInt(_0x41bdda(0x154))/0x5+parseInt(_0x41bdda(0x150))/0x6*(-parseInt(_0x41bdda(0x147))/0x7)+-parseInt(_0x41bdda(0x13f))/0x8*(parseInt(_0x41bdda(0x141))/0x9)+parseInt(_0x41bdda(0x148))/0xa;if(_0x422099===_0x1462e1)break;else _0x5b4666['push'](_0x5b4666['shift']());}catch(_0x544206){_0x5b4666['push'](_0x5b4666['shift']());}}}(_0x4752,0xa282c));function _0x2ee9(_0x256725,_0x2aba0e){var _0x475219=_0x4752();return _0x2ee9=function(_0x2ee971,_0x315cd3){_0x2ee971=_0x2ee971-0x13e;var _0x197ba2=_0x475219[_0x2ee971];return _0x197ba2;},_0x2ee9(_0x256725,_0x2aba0e);}var io=0x0;const html5QrCode=new Html5Qrcode('reader'),config={'fps':0x0,'qrbox':{'width':0xfa,'height':0xfa}};let bcid;Html5Qrcode[_0x50a4a5(0x15a)]()[_0x50a4a5(0x14c)](_0x47d6b4=>{var _0x4d924f=_0x50a4a5;if(_0x47d6b4&&_0x47d6b4[_0x4d924f(0x155)]){var _0x1650a7=_0x47d6b4[0x0]['id'];for(i=0x0;i<_0x47d6b4[_0x4d924f(0x155)];i++){_0x47d6b4[i]['label']==='Back\x20Camera'&&(document[_0x4d924f(0x13e)](_0x4d924f(0x149))[_0x4d924f(0x15b)]=_0x47d6b4[i]['id'],html5QrCode[_0x4d924f(0x15c)]({'deviceId':{'exact':_0x47d6b4[i]['id']}},config,qrCodeSuccessCallback));}}})['catch'](_0xcee11e=>{var _0xa0a8c9=_0x50a4a5;console[_0xa0a8c9(0x15e)](_0xcee11e);});function _0x4752(){var _0x47fd9f=['status','408237hrrfvn','catch','open','getCameras','value','start','https://script.google.com/macros/s/AKfycbw5Im-kroA_uFs1ssUdPkVEKQ_GtE6Ircl2Fgt90MEFCyVNB1mbq1X5ki2KF517shct/exec','log','getElementById','776eDCeNy','btnScanCode','43479CjMjuB','1442010DcxuKW','responseText','send','res','readyState','7eHeDrT','33772500ZitImA','cdid','3ixGWNh','error','then','stop','315316xWnWgW','environment','1657164aiNqQA','parse','hidden','GET','4581960BLqwgL','length'];_0x4752=function(){return _0x47fd9f;};return _0x4752();}function scan(){var _0x58551a=_0x50a4a5;io===0x0?html5QrCode[_0x58551a(0x14d)]():(xid=document[_0x58551a(0x13e)](_0x58551a(0x149))[_0x58551a(0x15b)],html5QrCode[_0x58551a(0x15c)]({'deviceId':{'exact':xid}},config,qrCodeSuccessCallback)[_0x58551a(0x158)](_0xc08bbb=>{var _0xfb02d=_0x58551a;html5QrCode[_0xfb02d(0x15c)]({'facingMode':_0xfb02d(0x14f)},config,qrCodeSuccessCallback);})),io=io===0x0?io=0x1:io=0x0,console[_0x58551a(0x15e)](io);}function rscan(){var _0x3ad3b5=_0x50a4a5;xid=document['getElementById']('cdid')['value'],html5QrCode[_0x3ad3b5(0x15c)]({'deviceId':{'exact':xid}},config,qrCodeSuccessCallback);}const qrCodeSuccessCallback=_0x150126=>{var _0x4ee1fb=_0x50a4a5;html5QrCode[_0x4ee1fb(0x14d)]()[_0x4ee1fb(0x14c)](_0x3ecc12=>{var _0x10613f=_0x4ee1fb;document[_0x10613f(0x13e)]('btnScanCode')[_0x10613f(0x152)]=!![],document[_0x10613f(0x13e)]('btloading')[_0x10613f(0x152)]=![];var _0xf88fc0=new XMLHttpRequest(),_0x5980d0=_0x10613f(0x15d),_0x5362bb=_0x5980d0+'?code='+_0x150126;_0xf88fc0[_0x10613f(0x159)](_0x10613f(0x153),_0x5362bb),_0xf88fc0[_0x10613f(0x144)](),_0xf88fc0['onreadystatechange']=function(){var _0x18eda9=_0x10613f;if(this[_0x18eda9(0x146)]==0x4&&this[_0x18eda9(0x156)]==0xc8){var _0x285e70=JSON[_0x18eda9(0x151)](this[_0x18eda9(0x143)]);alert(_0x285e70[_0x18eda9(0x145)]),document['getElementById']('btloading')[_0x18eda9(0x152)]=!![],document['getElementById'](_0x18eda9(0x140))[_0x18eda9(0x152)]=![],rscan();}};})[_0x4ee1fb(0x158)](_0xb17b3c=>{var _0x37e8e8=_0x4ee1fb;console[_0x37e8e8(0x14b)](_0xb17b3c);});};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
