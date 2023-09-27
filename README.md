@@ -1,6 +1,6 @@
 # qr-scan-sheet
 
-![Logo]([https://i.ibb.co/3BHdkPT/Capture.png](https://chart.googleapis.com/chart?cht=qr&chl=testcode01&chs=180x180&choe=UTF-8)) ![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode02&chs=180x180&choe=UTF-8) ![Logo]([https://i.ibb.co/3BHdkPT/Capture.png](https://chart.googleapis.com/chart?cht=qr&chl=testcode03&chs=180x180&choe=UTF-8))
+![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode01&chs=180x180&choe=UTF-8)![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode02&chs=180x180&choe=UTF-8)![Logo](https://chart.googleapis.com/chart?cht=qr&chl=testcode03&chs=180x180&choe=UTF-8)
 
 ไฟล์ index.html
 
